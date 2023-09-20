@@ -1,0 +1,39 @@
+.home
+{
+    height: 95vh;
+    background:url('../images/home/homeimg.jpg') no-repeat;
+    background-size: 100% 100%;
+    object-fit: fill;
+}
+.home-col h2{
+    color:rgb(252, 98, 8);
+    margin-top: 150px;
+    margin-left: 10%;
+    position: absolute;
+    transition: animation ease-in 1s;
+    animation:  2s linear  1  move;
+    
+}
+.home-col h1{
+    color:rgb(252, 252, 252);
+    margin-top: 250px;
+    margin-left: 10%;
+    font-size: 60px;
+    position: absolute;
+    transition: animation ease-in 1s;
+    animation:  3s linear 1  move;
+    
+}
+@keyframes move
+{
+    0%{right:-40%;}
+    
+    100%{left:0;}
+}
+@media only screen and (max-width:600px)
+{
+    .col h2
+    {
+        width: 50%;
+    }
+}
